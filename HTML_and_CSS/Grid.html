@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{ 
+            background-color: cornflowerblue;
+            width: 100%;
+            height: 700px;
+            display: grid;
+            /* grid-template-rows: 100px 300px 100px; */
+            /* grid-template-columns: 250px 250px 150px; */
+
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 50px 1fr 100px;
+
+            /* grid-template-columns: repeat(3,1fr); */
+            /* grid-template-rows: repeat(3,1fr); */
+            row-gap: 15px;
+            column-gap: 15px;
+        }
+        .item{ 
+            background-color: burlywood;
+            /* height: 100px; */
+            /* width: 150px; */
+            border: 1px solid black;
+
+        }
+
+        .header{ 
+            grid-row-start:1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end:4;
+        }
+
+        .footer{ 
+            grid-row-start:3;
+            grid-row-end: 4;
+            grid-column-start:1 ;
+            grid-column-end:4;
+        }
+/* Navbar */
+ul{ 
+            list-style-type: none;
+            display: inline-block;
+            /* margin-left: 950px; */
+        }
+
+        li{ 
+            float: left;
+        }
+
+       li a{ 
+            margin: 4px;
+            padding: 5px;
+            border: 1px solid black;
+            text-decoration: none;
+            background-color: azure;
+            color: black;
+            border-radius: 4px;
+        }
+
+        .dropdown-content{ 
+            display: none;
+            position: absolute;
+            margin-top: 5px;
+        }
+
+        .dropdown-content a{ 
+            background-color: orangered ;
+            color: white;
+            display: block;
+        }
+
+        li a:hover{ 
+            background-color: coral;
+            color: black;
+        }
+
+        li.dropdown .btn:hover{ 
+            background-color: yellowgreen;
+        }
+        
+        li.dropdown a.btn{
+            background-color: yellow;
+        }
+
+        li.dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header item">
+            <ul>
+                <li><a href="">Home </a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="dropdown"><a href="" class="btn">Tutorial</a>
+                    <div class="dropdown-content">
+                        <a href="Navbar.html">HTML</a>
+                        <a href="Navbar1.html">CSS</a>
+                        <a href="Navbar_vertical.html">JS</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="item">Right</div>
+        <div class="item">Left</div>
+        <div class="item">Right</div>
+        <div class="footer item">Footer</div>
+    </div>
+</body>
+</html>

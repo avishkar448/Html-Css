@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .x{ 
+        display: inline-block;
+    }
+
+     #x1{
+        background-color: aqua;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        top: 100px;
+        left:100px;
+        position: static;
+     }
+
+     #x2{
+        background-color: aqua;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        top: 100px;
+        left:100px;
+       position: relative; 
+     }
+
+     #x3{
+        background-color: aqua;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        top: 100px;
+        left:100px;
+         position: absolute;
+     }
+
+     #x4{
+        background-color: aqua;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        bottom: 5px;
+        right: 5px;
+        position: fixed;
+     }
+
+     #x5{
+        background-color: aqua;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 5px;
+        position: sticky;
+        top: 5px;
+     }
+
+     .main{ 
+        background-color: cadetblue;
+        height: 1000px;
+        width: 100%;
+     }
+</style>
+
+<body>
+    <!-- static, relative,absolute , fixed,sticky -->
+    <div class="main">
+        <div class="x" id="x1">Static</div>
+        <div class="x" id="x2">relative</div>
+        <div class="x" id="x3">absolute</div>
+        <div class="x" id="x4">fixed</div>
+        <div class="x" id="x5">sticky</div>
+        
+    </div>
+    
+</body>
+</html>

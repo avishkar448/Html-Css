@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="It is my table practice">
+    <title>Table Practice</title>
+</head>
+
+<style>
+
+    table{
+        height: 200px;
+        width: 400px;
+    }
+
+    table,th,td{ 
+        border: 3px solid black ;
+        border-collapse:collapse ;
+        text-align: center;
+    }
+
+    tr:nth-child(odd){ 
+        background-color: crimson;
+    }
+
+    tr:nth-child(even){ 
+        background-color: aquamarine;
+    }
+
+    tr:hover{
+        background-color: yellow;
+        color: black;
+    }
+
+    th:hover{ 
+        background-color: blanchedalmond;
+        color: black;
+    }
+</style>
+
+<body>
+    <marquee behavior="alert" direction="right">
+        <strong>It is my table</strong>
+    </marquee>
+    <br>
+
+    <abbr title="My table">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Matches</th>
+            <th colspan="2">Avg.</th>
+            <th>Runs</th>
+        </tr>
+
+        <tr>
+            <th></th><th></th>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+        <tr>
+            <td>R.Sharma</td>
+            <td>4</td>
+            <td>66.25</td>
+            <td>88.32</td>
+            <td>265</td>
+        </tr>
+
+        <tr>
+            <td>V.Kohli</td>
+            <td>4</td>
+            <td>129.50</td>
+            <td>98.21</td>
+            <td>259</td>
+        </tr>
+
+        <tr>
+            <td>D.Conway</td>
+            <td>4</td>
+            <td>83.00</td>
+            <td>85.21</td>
+            <td>249</td>
+        </tr>
+
+        <tr>
+            <td>Q.de kock</td>
+            <td>4</td>
+            <td>58.25</td>
+            <td>78.21</td>
+            <td>233</td>
+        </tr>
+
+        <tr>
+            <td>D.Warner</td>
+            <td>4</td>
+            <td>68.00</td>
+            <td>71.00</td>
+            <td>230</td>
+        </tr>
+
+    </table>
+    </abbr>
+    <br><br>
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <td>Avishkar</td>
+            <td>Rahul</td>
+            <td>Pratik</td>
+            <td>Amol</td>
+        </tr>
+
+        <tr>
+            <th>Marks</th>
+            <td>85</td>
+            <td>54</td>
+            <td>78</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Phone no.</th>
+            <td>77854474</td>
+            <td>74512222</td>
+            <td>77854474</td>
+            <td>74512222</td>
+        </tr>
+
+        <tr>
+            <td>77854474</td>
+            <td>74512222</td>
+            <td>77854474</td>
+            <td>74512222</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <table>
+
+        <tr>
+            <th></th><th></th>
+            <th>Bob</th>
+            <th>alice</th>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Favorite</th>
+            <th>Color</th>
+            <td>Blue</td>
+            <td>Purple</td>
+        </tr>
+
+        <tr>
+            <th>Flavor</th>
+            <td>Banana</td>
+            <td>Chocolate</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Least Favorite</th>
+            <th>Color</th>
+            <td>Yellow</td>
+            <td>Pink</td>
+        </tr>
+
+        <tr>
+            <th>Flavor</th>
+            <td> <a href="https://www.instagram.com/">Mint </a></td>
+            <td>Walnut</td>
+        </tr>
+    </table>
+    <br><br>
+
+    
+</body>
+</html>

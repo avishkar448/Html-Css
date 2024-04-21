@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{ 
+            color: blueviolet;
+            border: 2px solid brown;
+            height: 200px;
+            width: 300px;
+            animation-name:arrow ;
+            background-color: cornflowerblue;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay:5s ;
+            /* animation: infinite; */
+        }
+
+        @keyframes arrow{ 
+            /* from{background-color: aqua;}
+            to{background-color: brown;} */
+            0%{background-color: blueviolet;}
+            25%{background-color: chartreuse;}
+            50%{background-color: orangered;}
+            75%{background-color: darkmagenta;}
+            100%{background-color: pink}
+        }
+    </style>
+</head>
+<body>
+    <!-- @keyframes,animation-count,animaton-name,animation function,animation iteration,animation-direction -->
+
+    <div>
+        Welcome to animation
+    </div>
+</body>
+</html>

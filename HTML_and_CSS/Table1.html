@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{ 
+        height: 200px;
+        width: 400px;;
+    }
+
+    th{
+        background-color: aqua;
+        color:brown ;
+    }
+
+    table,td,th{
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    tr:nth-child(odd){
+        background-color: cadetblue;
+        color: brown;
+    }
+
+    tr:nth-child(even){
+        background-color: darkkhaki;
+    }
+
+</style>
+<body>
+   
+    <table>
+        <tr>
+            <th>ID</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <td>Avishkar</td>
+            <td>Ashok</td>
+            <td>Abhay</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Phone no.</th>
+            <td>9730328530</td>
+            <td>784512125</td>
+            <td>987455265</td>
+        </tr>
+
+        <tr>
+            <td>7854545554</td>
+            <td>544551212</td>
+            <td>5454454554</td>
+        </tr>
+
+        <tr>
+            <th>alert</th>
+            <td>9730328530</td>
+            <td>784512125</td>
+            <td>987455265</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{ 
+            margin: 0;
+            cursor:default;
+        }
+
+        .main {
+            background-color: #6A1B9A;
+            border: 1px solid black;
+            height: 50px;
+            width: 100%;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline-block;
+            margin-top: 10px;
+            
+        }
+
+        li{ 
+            float:left;
+            margin-top: 5px;
+        }
+
+        li a{ 
+            text-decoration: none;
+            color: white;
+            background-color: #6A1B9A;
+            /* border: 1px solid black; */
+           margin: 10px;
+           padding: 15px;
+           font-size: large;
+
+        }
+
+        .dropdown-content{ 
+            display: none;
+            position: absolute;
+            margin-top: 5px;
+            /* z-index: 1; */
+            min-width: 130px;
+            margin-top: 15px;
+        
+        }
+
+        .dropdown-content a{ 
+            background-color: #AB47BC;
+            color: black;
+            display: block;
+            margin: 0;
+            /* overflow: hidden; */
+            /* margin: 5px; */
+            /* padding-top: 15px; */
+            /* text-align: left; */
+            
+
+        }
+
+        li a:hover{ 
+            background-color: #4A148C;
+            color: black;
+        }
+        
+        li.dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+    <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="dropdown"><a href="#" class="btn">Courses</a>
+                <div class="dropdown-content">
+            <a href="#">Java</a>
+            <a href="#">Python</a>
+            <a href="#">Php</a>
+            <a href="#">JavaScript</a>
+    </div>
+    </li>
+    </ul>
+
+    </div>
+</body>
+
+</html>

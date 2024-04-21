@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            cursor: default;
+        }
+        ul{ 
+            list-style-type: none;
+            background-color: #D500F9;
+        }
+
+        li{ 
+            display: inline-block;
+            position: relative;
+            color: white;
+            padding: 10px;
+        }
+
+        .dropdown{ 
+            
+        }
+
+        .dropdown a{ 
+            display: block;
+            padding: 20px 25px;
+            /* color: white; */
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            /* font-size: 20px; */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li class="dropdown">Tutorial
+                <ul class="hovereffect">
+                    <li><a href="#">Java</a> </li>
+                    <li><a href="#">Python</a> </li>
+                    <li><a href="#">C</a> </li>
+                    <li><a href="#">Php</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

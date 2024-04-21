@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+        } 
+        .main {
+            background-color: orangered;
+            height: 50px;
+            width: 100%;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+
+         ul li{
+            margin-left: 15px;
+            float: left;
+            text-decoration: none;
+            display: block;
+            color: black;
+            font-family: sans-serif;
+            padding: 2px;
+            padding: 10px;
+            font-size: larger;
+            margin-top:5px;
+            position: relative;
+            /* text-align: center; */
+        }
+
+        .hovercontent  { 
+            position: absolute;
+            display: none;
+            width: 100%;
+        }
+
+        .hovercontent li a{ 
+            display: block;
+            text-decoration: none;
+            font-size: medium;
+            /* width: 100%; */
+            text-align: center;
+            
+
+        }
+
+        .main ul li:hover {
+            background-color: blueviolet;
+        }
+
+        .main ul li:hover .hovercontent{ 
+            display: block;
+        }
+
+    </style>
+</head>
+.
+
+<body>
+    <div class="main">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li class="hover">Tutorial
+                <ul class="hovercontent">
+            <li><a href="#">Java</a></li>
+            <li><a href="#">Php</a></li>
+            <li><a href="#">Python</a></li>
+            <ul>
+
+    </li>
+    </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: aquamarine;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        
+        ul{ 
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        li{ 
+            float: left;
+        }
+
+       li a{ 
+            margin: 4px;
+            padding: 5px;
+            border: 1px solid black;
+            text-decoration: none;
+            background-color: azure;
+            color: black;
+            border-radius: 4px;
+        }
+
+        .dropdown-content{ 
+            display: none;
+            position: absolute;
+            margin-top: 5px;
+        }
+
+        .dropdown-content a{ 
+            background-color: orangered ;
+            color: white;
+            display: block;
+        }
+
+        li a:hover{ 
+            background-color: coral;
+            color: black;
+        }
+
+        li.dropdown .btn:hover{ 
+            background-color: yellowgreen;
+        }
+        
+        li.dropdown a.btn{
+            background-color: yellow;
+        }
+
+        li.dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="">Home </a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li class="dropdown"><a href="" class="btn">Tutorial</a>
+                <div class="dropdown-content">
+                    <a href="Navbar.html">HTML</a>
+                    <a href="Navbar1.html">CSS</a>
+                    <a href="Navbar_vertical.html">JS</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

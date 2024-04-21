@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{ 
+        cursor: default;
+    }
+
+    .dropdown{ 
+        background-color: bisque;
+        display: inline;
+    }
+    .hovereffect{ 
+        display: none;
+        background-color: blueviolet;
+        border: 2px solid brown;
+        width: 50px;
+    }
+    .dropdown :hover{ 
+        background-color: chartreuse;
+    }
+
+    .dropdown:hover .hovereffect{ 
+        display: block;
+    }
+
+    
+
+</style>
+
+<body>
+    <div class="main">
+        <div class="dropdown">
+            <span>Service</span>
+            <div class="hovereffect">
+                <p>After hover</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

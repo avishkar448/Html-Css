@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><h1>Logo</h1></div>
+        <div class="ham"><i class="ri-menu-line"></i></div>
+
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+<script>
+   var ham=document.querySelector(".ham");
+    ham.addEventListener("click",()=>{
+        var x =document.querySelector(".nav-bar");
+        if(x.classList.toggle("active")){
+            x.style.left="0%"
+        }
+        else{
+            x.style.left="-100%"
+        }
+    })
+
+</script>
+</html>
